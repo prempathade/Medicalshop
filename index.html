@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity Life - Medical Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <!-- Swiper CSS -->
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+   <style>
+    .nav-link{
+  color: black;
+}
+   </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="preview.jpg" alt="Logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-danger" href="index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="rough.html"><i class="fas fa-truck-fast"></i> Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="offers.html"><i class="fas fa-percent"></i> Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user-tie"></i> Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-cart-shopping"></i> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner" style="height: 80vh;">
+      <div class="carousel-item active h-100" style="background: url('young-handsome-physician-medical-robe-with-stethoscope.jpg') center/cover no-repeat;">
+        <div class="h-100 w-100 bg-dark bg-opacity-50 d-flex align-items-center justify-content-center text-white text-center">
+          <div>
+            <h1 class="display-4">Welcome to Charity Life</h1>
+            <p class="lead">Experience purity, wellness, and sattvik living—ethically and naturally.</p>
+            <a href="rough.html" class="btn btn-light mt-3">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item h-100" style="background: url('woman-s-hand-pours-medicine-pills-out-bottle.jpg') center/cover no-repeat;">
+        <div class="h-100 w-100 bg-dark bg-opacity-50 d-flex align-items-center justify-content-center text-white text-center">
+          <div>
+            <h2>Charity Life Wellness</h2>
+            <p>Explore health solutions based on Doctor's advice.</p>
+            <a href="rough.html" class="btn btn-outline-light">Explore More</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item h-100" style="background: url('high-angle-pill-foils-plastic-containers.jpg') center/cover no-repeat;">
+        <div class="h-100 w-100 bg-dark bg-opacity-50 d-flex align-items-center justify-content-center text-white text-center">
+          <div>
+            <h2>Certified & Trusted</h2>
+            <p>Your trusted charity life partner — from certified health advisors.</p>
+            <a href="rough.html" class="btn btn-outline-light">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+    </button>
+  </div>
+
+  <!-- Limited Time Deals -->
+  <section class="limited-deals">
+    <div class="section-title">
+      <h2>Exclusive Offers on Charity Life</h2>
+      <p class="text-muted">Limited Time Deals</p>
+    </div>
+    <div class="container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="syrup.jpg" alt="Cough Syrup">
+            <p>Cough Syrup</p>
+            <h5>₹156.50 <span class="text-success">(19%)</span></h5>
+            <button class="btn btn-info btn-sm">Add to cart</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="Shampoo.jpg" alt="Shampoo">
+            <p>Shampoo</p>
+            <h5>₹289.50 <span class="text-success">(2%)</span></h5>
+            <button class="btn btn-info btn-sm">Add to cart</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="lotion.jpg" alt="Lotion">
+            <p>Body Lotion</p>
+            <h5>₹186.50 <span class="text-success">(8%)</span></h5>
+            <button class="btn btn-info btn-sm">Add to cart</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="pills-inside-blister.jpg" alt="pills-inside-blister">
+            <p>Paracetamol</p>
+            <h5>₹49.50 <span class="text-success">(9%)</span></h5>
+            <button class="btn btn-info btn-sm">Add to cart</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="vitamin complex.jpg" alt="Lotion">
+            <p>Vitamin C</p>
+            <h5>₹98.50 <span class="text-success">(2%)</span></h5>
+            <button class="btn btn-info btn-sm">Add to cart</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="hand-with-medication-dark-style.jpg" alt="Lotion">
+            <p>Aspirin</p>
+            <h5>₹34.50 <span class="text-success">(9%)</span></h5>
+            <button class="btn btn-info btn-sm">Add to cart</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="pads.m004.c13.FP feminine hygiene sanitary pad tampon realistic mockup.jpg" alt="Lotion">
+            <p>Pad</p>
+            <h5>₹98.50<span class="text-success">(10%)</span></h5>
+            <button class="btn btn-info btn-sm">Add to cart</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="vitamin c 2.jpg" alt="Vitamin C">
+            <p>Vitamin C</p>
+            <h5>₹98.50 <span class="text-success">(2%)</span></h5>
+            <button class="btn btn-info btn-sm">Add to cart</button>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-5 bg-light" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>About Us</h3>
+          <p>Charity Life is your home for pure, sattvik living. We offer carefully curated products and services that align with sattvik values—ethical, natural, and nourishing for the body, mind, and spirit.</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="preview.jpg" class="img-fluid rounded shadow" alt="About Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-5 text-center" style="background-color: #ebffff;">
+    <div class="container">
+      <h2 class="mb-4">What We Offer</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <i class="fa-solid fa-briefcase-medical fa-2x mb-3"></i>
+          <h5>1 Lakh+ Products</h5>
+          <p>We offer 1 lakh+ medicines and products through retail partners across the country.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-capsules fa-2x mb-3"></i>
+          <a href="rough.html"><h5 style="color: black;">ORDER MEDICINE</h5></a>
+          <p>Get medicines at the lowest price & great discounts.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-comments fa-2x mb-3"></i>
+         <a href="feedback.html"><h5 style="color: black;">Feedback</h5></a>
+          <p>Send us your valuable feedback!</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-file-contract fa-2x mb-3"></i>
+          <h5>Policy Info</h5>
+          <ul class="list-unstyled small">
+            <li>Editorial Policy</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Customer Support Policy</li>
+            <li>Return Policy</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-certificate fa-2x mb-3"></i>
+          <a href="certificate.html"><h5 style="color: black;">CERTIFIED</h5></a>
+          <p>Certificate awarded to Mr. Robert Greer for organizing a free medical camp in Kalyan City.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-truck fa-2x mb-3"></i>
+          <h5>Nationwide Delivery</h5>
+          <p>Available in: Mumbai, Nashik, Pune, Nagpur, and more cities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Prem Pathade. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        480: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        992: { slidesPerView: 4 },
+      }
+    });
+  </script>
+</body>
+</html>
