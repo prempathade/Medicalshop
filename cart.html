@@ -22,6 +22,16 @@
 .nav-link{
   color: black;
 }
+    .cart-count {
+      background: red;
+      color: white;
+      font-size: 12px;
+      border-radius: 50%;
+      padding: 2px 6px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
   </style>
 </head>
 <body>
@@ -38,7 +48,10 @@
           <li class="nav-item"><a class="nav-link" href="rough.html"><i class="fas fa-truck-fast"></i> Shop</a></li>
           <li class="nav-item"><a class="nav-link" href="offers.html"><i class="fas fa-percent"></i> Offers</a></li>
           <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user-tie"></i> Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-cart-shopping"></i> Cart</a></li>
+                 <li class="nav-item position-relative">
+    <a class="nav-link" href="cart.html" onclick="goToCart()"><i class="fas fa-cart-shopping"></i> Cart</a>
+    <span id="cart-count" class="cart-count">0</span>
+  </li>
         </ul>
       </div>
     </div>

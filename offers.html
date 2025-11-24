@@ -21,6 +21,63 @@
 }
   
   </style>
+  <style>
+    /* Offer Card */
+.offer-card {
+    border: 2px solid #c8c8c8;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.offer-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Offer Images */
+.offer-img {
+    width: 15%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Coupon Box */
+.coupon-box {
+    background: #f0f8ff;
+    border: 1px dashed #007bff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Coupon Code Highlight */
+.coupon-code {
+    background: #ffe08a;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Expiry Text */
+.expire {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+    .cart-count {
+      background: red;
+      color: white;
+      font-size: 12px;
+      border-radius: 50%;
+      padding: 2px 6px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  </style>
 </head>
 <body>
      <!-- Navbar -->
@@ -36,7 +93,10 @@
           <li class="nav-item"><a class="nav-link" href="rough.html"><i class="fas fa-truck-fast"></i> Shop</a></li>
           <li class="nav-item"><a class="nav-link" href="offers.html"><i class="fas fa-percent"></i> Offers</a></li>
           <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user-tie"></i> Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-cart-shopping"></i> Cart</a></li>
+           <li class="nav-item position-relative">
+    <a class="nav-link" href="cart.html" onclick="goToCart()"><i class="fas fa-cart-shopping"></i> Cart</a>
+    <span id="cart-count" class="cart-count">0</span>
+  </li>
         </ul>
       </div>
     </div>
@@ -72,53 +132,58 @@ function myFunction() {
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6" style="border: 2px solid black;">
-  <img src="preview.jpg" alt="Avatar" style="width:10%;">
-  <div class="container" style="background-color:white">
-    <h3><b>Get FLAT RS 2800 OFF On Full Body Health Check Up.</b></h3>
-    <p>Get FLAT RS 2800 OFF On Full Body Health Check Up.</p>
-  </div>
-  <div class="container">
-    <p>Use Coupon Code: <span class="promo">CHARITYLIFE2025</span></p>
-    <p class="expire">Expires: Sep 01, 2025</p>
-  </div>
+
+    <!-- Offer 1 -->
+    <div class="col-md-6 offer-card">
+      <img src="preview.jpg" class="offer-img" alt="Avatar">
+      <h3><b>Get FLAT RS 2800 OFF On Full Body Health Check Up.</b></h3>
+      <p>Get FLAT RS 2800 OFF On Full Body Health Check Up.</p>
+
+      <div class="coupon-box">
+        <p>Coupon Code: <span class="coupon-code">CHARITYLIFE2025</span></p>
+        <p class="expire">Expires: Sep 01, 2025</p>
+      </div>
     </div>
-  <div class="col-md-6" style="border: 2px solid black;">
-  <img src="SL-020622-4930-41.jpg" alt="Avatar" style="width:10%;">
-  <div class="container" style="background-color:white">
-    <h3><b>Get up to ₹500 cashback via Rupee.Use code PEMKBJUL500 on Rupee</b></h3>
-    <p>Use code PEMKBJUL500 while paying on Charitylife using Rupee wallet,enjoy up to ₹500 cashback on...</p>
-  </div>
-  <div class="container">
-    <p>Use Coupon Code: <span class="promo">PEMKBJUL500</span></p>
-    <p class="expire">Expires: Jul 30, 2025</p>
+
+    <!-- Offer 2 -->
+    <div class="col-md-6 offer-card">
+      <img src="SL-020622-4930-41.jpg" class="offer-img" alt="Avatar">
+      <h3><b>Get up to ₹500 cashback via Rupee</b></h3>
+      <p>Use code PEMKBJUL500 while paying on Charitylife using Rupee wallet, enjoy up to ₹500 cashback...</p>
+
+      <div class="coupon-box">
+        <p>Coupon Code: <span class="coupon-code">PEMKBJUL500</span></p>
+        <p class="expire">Expires: Jul 30, 2025</p>
+      </div>
+    </div>
+
+    <!-- Offer 3 -->
+    <div class="col-md-6 offer-card">
+      <img src="SL-070723-61140-04.jpg" class="offer-img" alt="Avatar">
+      <h3><b>Get upto ₹300 Cashback & Vouchers of Upto ₹2000 | MOV ₹199</b></h3>
+      <p>Minimum Assured Cashback ₹10</p>
+
+      <div class="coupon-box">
+        <p>Coupon Code: <span class="coupon-code">JULYCASHBACK</span></p>
+        <p class="expire">Expires: Aug 01, 2025</p>
+      </div>
+    </div>
+
+    <!-- Offer 4 -->
+    <div class="col-md-6 offer-card">
+      <img src="m028t0165_c_offer_cash_back_30sep22.jpg" class="offer-img" alt="Avatar">
+      <h3><b>Win up to ₹100 cashback on order above RS699</b></h3>
+      <p>Valid on transactions above ₹699.</p>
+
+      <div class="coupon-box" style="margin-top: 50px;">
+        <p>Coupon Code: <span class="coupon-code">JULAZPAY</span></p>
+        <p class="expire">Expires: Jul 31, 2025</p>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<div class="col-md-6" style="border: 2px solid black;">
-  <img src="SL-070723-61140-04.jpg" alt="Avatar" style="width:10%;">
-  <div class="container" style="background-color:white">
-    <h3><b>Get upto ₹300 Cashback & Vouchers of Upto ₹2000 | MOV ₹199</b></h3>
-    <p>Minimum Assured Cashback ₹10</p>
-  </div>
-  <div class="container">
-    <p>Use Coupon Code: <span class="promo">JULYCASHBACK</span></p>
-    <p class="expire">Expires: Aug 01, 2025</p>
-  </div>
-</div>
-
-<div class="col-md-6" style="border: 2px solid black;">
-  <img src="m028t0165_c_offer_cash_back_30sep22.jpg" alt="Avatar" style="width:10%;">
-  <div class="container" style="background-color:white">
-    <h3><b>Win up to ₹100 cashback on order above RS699.Min Cashback RS 20.Valid once per...</b></h3>
-    <p>Valid on transactions above ₹699.</p>
-  </div>
-  <div class="container">
-    <p>Use Coupon Code: <span class="promo">JULAZPAY</span></p>
-    <p class="expire">Expires: JUL 31, 2025</p>
-  </div>
-</div>
-  </div></div>
 
   <!-- Services Section -->
   <section class="py-5 text-center" style="background-color: #ebffff; font-size: 11px;">
