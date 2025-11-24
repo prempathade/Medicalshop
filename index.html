@@ -19,7 +19,17 @@
    <style>
     .nav-link{
   color: black;
-}
+} 
+    .cart-count {
+      background: red;
+      color: white;
+      font-size: 12px;
+      border-radius: 50%;
+      padding: 2px 6px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
    </style>
 </head>
 
@@ -38,7 +48,10 @@
           <li class="nav-item"><a class="nav-link" href="rough.html"><i class="fas fa-truck-fast"></i> Shop</a></li>
           <li class="nav-item"><a class="nav-link" href="offers.html"><i class="fas fa-percent"></i> Offers</a></li>
           <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user-tie"></i> Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-cart-shopping"></i> Cart</a></li>
+                 <li class="nav-item position-relative">
+    <a class="nav-link" href="cart.html" onclick="goToCart()"><i class="fas fa-cart-shopping"></i> Cart</a>
+    <span id="cart-count" class="cart-count">0</span>
+  </li>
         </ul>
       </div>
     </div>
@@ -63,7 +76,7 @@
             <p>Explore health solutions based on Doctor's advice.</p>
             <a href="rough.html" class="btn btn-outline-light">Explore More</a>
           </div>
-        </div>
+        </div>  
       </div>
       <div class="carousel-item h-100" style="background: url('high-angle-pill-foils-plastic-containers.jpg') center/cover no-repeat;">
         <div class="h-100 w-100 bg-dark bg-opacity-50 d-flex align-items-center justify-content-center text-white text-center">
